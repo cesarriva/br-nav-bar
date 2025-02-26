@@ -8,7 +8,9 @@ npm install tailwindcss @tailwindcss/postcss postcss clsx tailwind-merge @radix-
 
 Then:
 
-- Copy the folders `icons` and `Navbar` with all its contents to your the source folder of your app.
+- Copy the folders `icons`, `Navbar` with all its contents to your src folder.
+- Copy the `Tooltip.tsx` file to your src folder.
+- Please keep the copied folders and files in the same relative positions they current are, otherwise you will have to change the imports.
 - Import the `<Navbar />` component where you want to use it like this: `import Navbar from "./Navbar/Navbar";`
 - Then just render it in your JSX.
 - You may have to wrap the navbar with another div element and position the wrapper in a way it stays to the left of your main content (fixed at the left side of the screen).
