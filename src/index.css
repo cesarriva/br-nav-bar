@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navbar-default: #f2f4f8;
+  --color-navbar-item: #dde1e6;
+}
+
+.menu-active {
+  @apply bg-inherit [&>svg]:stroke-indigo-600;
+}
+
+.menu-active + a {
+  @apply rounded-tr-2xl;
+}
+
+a:has(+ .menu-active) {
+  @apply rounded-br-2xl;
+}
